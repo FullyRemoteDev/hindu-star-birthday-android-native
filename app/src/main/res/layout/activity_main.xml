@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#F57C00"
+        tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/dobselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/button"
+            android:text="@string/dobselect"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:onClick="showDatePickerDialog" />
+
+        <Button
+            android:id="@+id/tobselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/button"
+            android:text="@string/tobselect"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:onClick="showTimePickerDialog"/>
+
+        <Button
+            android:id="@+id/pobselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button"
+            android:text="@string/pobselect"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/sbYearTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:text="@string/sbyselect"/>
+
+        <EditText
+            android:id="@+id/sbYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="4"
+            android:cursorVisible="false"
+            android:inputType="number|textNoSuggestions"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/button"
+            android:text="@string/calculate"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/button"
+            android:text="@string/reset"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/sbTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:text="@string/sbtitle"/>
+
+        <TextView
+            android:id="@+id/starBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

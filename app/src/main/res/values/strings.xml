@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Star Birthday Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="dobselect">Date of Birth</string>
+    <string name="tobselect">Time of Birth</string>
+    <string name="pobselect">Place of Birth</string>
+
+    <string name="sbyselect">Year for Star Birthday:</string>
+    <string name="sbyenter">2015</string>
+
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="sbtitle">Your Star Birthday Details:</string>
+
+
+</resources>
